@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Selecionar Imagem (Galeria)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagem Original:"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivOriginal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:background="#EEEEEE" />
+
+    <Button
+        android:id="@+id/btnInfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Realizar Inferência"
+        android:layout_marginTop="16dp"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Máscara Segmentada:"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivMask"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:background="#EEEEEE" />
+
+</LinearLayout>
